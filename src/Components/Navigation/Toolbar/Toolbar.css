@@ -1,5 +1,5 @@
 .Toolbar {
-    height: 40px;
+    height: 50px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -18,13 +18,22 @@
 }
 
 .Logo {
-    height: 80%;
-    width:5%;
-    background-color: #e5fff1;
+    height: 80%;   
 }
 
 @media (max-width: 499px) {
     .DesktopOnly {
-        display: none;
+        /*display: none;*/
     }
+}
+
+.Title{
+    margin-left:20px;
+    display:inline;
+    font-size:24px;
+    font-weight:bold;
+    top:5px;
+    margin-left:0px;
+    left:0px;
+    margin-bottom:10px;
 }
