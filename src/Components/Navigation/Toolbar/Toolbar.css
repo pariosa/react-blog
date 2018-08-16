@@ -27,13 +27,11 @@
     }
 }
 
-.Title{
-    margin-left:20px;
+.Title{ 
     display:inline;
     font-size:24px;
-    font-weight:bold;
-    top:5px;
-    margin-left:0px;
-    left:0px;
-    margin-bottom:10px;
+    font-weight:bold;  
+ margin-left:10px;
+ margin-top:5px;
+    position:absolute;  
 }

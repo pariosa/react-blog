@@ -16,7 +16,7 @@ const toolbar = ( props ) => (
 			</svg>
          <div className="Title">
 				Peter's Blog
-			</div>
+		 </div>
         </div> 
         <nav className="DesktopOnly">
            	<NavigationItems />
