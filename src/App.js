@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+ 
+
+import Layout from './Components/Layout/Layout'; 
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Peter's Blog!</h1>
-        </header>
-        <p className="App-intro">this will focus on coding and music and whatever other topics are relevant to me!
-        </p>
+      <div>
+        <Layout>
+         
+        </Layout>
       </div>
     );
   }
 }
 
-export default App;
+export default App; 
