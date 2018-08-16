@@ -1,13 +1,13 @@
 import React from 'react';
  
 import NavigationItems from '../NavigationItems/NavigationItems';
-import classes from './SideDrawer.css';
+import './SideDrawer.css';
 import Backdrop from '../../UI/Backdrop/Backdrop'; 
 const Fragment = React.Fragment;
 const sideDrawer = ( props ) => {
-    let attachedClasses = [classes.SideDrawer, classes.Close];
+    let attachedClasses = ['SideDrawer', 'Close'];
     if (props.open) {
-        attachedClasses = [classes.SideDrawer, classes.Open];
+        attachedClasses = ['SideDrawer', 'Open'];
     }
     return (
         <Fragment>
