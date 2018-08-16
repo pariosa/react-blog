@@ -11,10 +11,14 @@
     box-sizing: border-box;
     transition: transform 0.3s ease-out;
 }
+.NavigationItems>NavigationItems>NavigationItem {
+    display:block;
+    width:100%;
+}
 
 @media (min-width: 500px) {
     .SideDrawer {
-        display: none;
+         
     }
 }
 

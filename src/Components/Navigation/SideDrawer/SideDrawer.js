@@ -14,8 +14,8 @@ const sideDrawer = ( props ) => {
             <Backdrop show={props.open} clicked={props.closed}/>
             <div className={attachedClasses.join(' ')}> 
                   
-                <nav>
-                    <NavigationItems />
+                <nav className="NavigationDrawer">
+                    <NavigationItems className="NavigationDrawerItems" />
                 </nav>
             </div>
         </Fragment>
