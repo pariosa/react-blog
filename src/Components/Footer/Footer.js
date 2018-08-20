@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from 'react'; 
 import './Footer.css';
 import Clock from '../FunctionalComponent/Clock';
 import IpAddress from '../FunctionalComponent/IpAddress';
  	
   
-class Footer extends React.Component {
+class Footer extends Component {
 	render(element){
 		return(
 			<div className="Footer" >   

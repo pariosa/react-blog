@@ -1,6 +1,5 @@
 import React from 'react';
- 
-import NavigationItems from '../NavigationItems/NavigationItems';
+  
 import './SideDrawer.css';
 import Backdrop from '../../UI/Backdrop/Backdrop'; 
 import NavigationItem from '../NavigationItems/NavigationItem/NavigationItem';
@@ -15,10 +14,10 @@ const sideDrawer = ( props ) => {
         <Fragment>
             <Backdrop show={props.open} clicked={props.closed}/>
             <div className={attachedClasses.join(' ')}> 
-                  
                 <nav className="NavigationDrawer">
                     <NavigationItem link="/" active>Blog</NavigationItem>
                     <NavigationItem link="/">Links</NavigationItem>
+                    <NavigationItem link="/">Contact</NavigationItem>
                  </nav>
             </div>
         </Fragment>

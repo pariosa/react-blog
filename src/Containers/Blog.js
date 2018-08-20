@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-import Modal from '../Components/UI/Modal/Modal'; 
+  
 import BlogPosts from '../Components/BlogPosts/BlogPosts';
 const Fragment = React.Fragment;
 
@@ -27,6 +26,7 @@ class Blog extends Component {
         return (
             <Fragment>
                <BlogPosts /> 
+               {this.props[0]}
             </Fragment>
         );
     }
