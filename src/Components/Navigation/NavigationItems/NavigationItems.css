@@ -13,3 +13,9 @@
         flex-flow: row;
     }
 }
+
+@media (max-width: 500px) {
+    .DesktopOnly {
+       display:none;
+    }
+}

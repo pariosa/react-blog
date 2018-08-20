@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Layout.css'; 
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
+import Blog from '../../Containers/Blog';
 const Fragment = React.Fragment;
 
 class Layout extends Component {
@@ -26,6 +27,7 @@ class Layout extends Component {
                 <SideDrawer
                     open={this.state.showSideDrawer}
                     closed={this.sideDrawerClosedHandler} />
+                <Blog />
                 <main className='Content'> 
                      {this.props.children}
                      Content will come here later :)
