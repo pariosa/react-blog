@@ -13,7 +13,7 @@ class Blog extends Component {
     state = {
     blogposts :  [{
             title: "Test 1",
-            content: 'Test1 Content Goes Here'
+            content: 'Test 1 Content Goes Here'
         },
         {
             title: 'Test 2',

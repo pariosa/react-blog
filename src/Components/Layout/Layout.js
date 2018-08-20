@@ -3,6 +3,8 @@ import './Layout.css';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 import Blog from '../../Containers/Blog';
+import Footer from '../Footer/Footer';
+
 const Fragment = React.Fragment;
 
 class Layout extends Component {
@@ -32,6 +34,8 @@ class Layout extends Component {
                      {this.props.children}
                      Content will come here later :)
                 </main>
+
+                <Footer/>
             </Fragment>
         )
     }
