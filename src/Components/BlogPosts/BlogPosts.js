@@ -5,13 +5,9 @@ import BlogPost from './BlogPost/BlogPost';
 class BlogPosts extends Component {
   constructor (props){
     super(props);
-    console.log('[BlogPosts.js] inside Constructor', props);
-      console.log(this.props.children);
-
   }
 
  render(){
-		 console.log('[BlogPosts.js] inside render()', this.props);
  	
 		return this.props.children.map( (blogpost, index) => {
 			return <BlogPost 
@@ -23,10 +19,7 @@ class BlogPosts extends Component {
 		
 
 		});
-
-	//	return(
-	//		<BlogPost />
-	//		)
+ 
 
 		
 	}
