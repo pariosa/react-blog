@@ -22,7 +22,7 @@
 .BlogContent{
 	padding:30px;
 	width:100%;
-	overflow: hidden;
+	overflow-y:scroll;
 	white-space: wrap;
 	text-overflow: ellipsis;
 	background-color:#e5efff;
