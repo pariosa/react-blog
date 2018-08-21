@@ -25,18 +25,18 @@ class Layout extends Component {
     render () {
         return (
             <Fragment>
-                <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} />
-                <SideDrawer
-                    open={this.state.showSideDrawer}
-                    closed={this.sideDrawerClosedHandler} />
-
-                <main className='Content'> 
-                <div className="BlogContainer">
-                    <Blog />
+                <div className="Container">
+                    <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} />
+                    <SideDrawer
+                        open={this.state.showSideDrawer}
+                        closed={this.sideDrawerClosedHandler} />
+                    <main className='Content'> 
+                        <div className="BlogContainer">
+                            <Blog />
+                        </div>
+                    </main>
+                    <Footer/>
                 </div>
-                </main>
-
-                <Footer/>
             </Fragment>
         )
     }
