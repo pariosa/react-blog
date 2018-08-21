@@ -1,15 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
  
 import BlogPost from './BlogPost/BlogPost';
 
-const BlogPosts = ( props ) => (
-    <ul className="BlogPosts">  
-    here are the props {this.props}, here is the state {this.state}
-    	<BlogPost >
-    	{this.props}
-    	</BlogPost>
-    	<BlogPost />
-    </ul>
-);
+class BlogPosts extends Component {
+  constructor (props){
+    super(props);
+    console.log('[BlogPosts.js] inside Constructor', props);
+      console.log(this.props.children);
 
+  }
+
+ render(){
+		 console.log('[BlogPosts.js] inside render()', this.props);
+ 	
+		return this.props.children.map( (blogpost, index) => {
+			return <BlogPost 
+			 	//click={() => this.props.clicked(index)}
+			 		  key={index}
+					  title={blogpost.title}
+					  content={blogpost.content}
+					  />
+		
+
+		});
+
+	//	return(
+	//		<BlogPost />
+	//		)
+
+		
+	}
+ 
+} 
+ 
 export default BlogPosts;
