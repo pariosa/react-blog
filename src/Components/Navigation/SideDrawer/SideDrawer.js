@@ -16,8 +16,9 @@ const sideDrawer = ( props ) => {
             <div className={attachedClasses.join(' ')}> 
                 <nav className="NavigationDrawer">
                     <NavigationItem link="/" active>Blog</NavigationItem>
-                    <NavigationItem link="/">Links</NavigationItem>
-                    <NavigationItem link="/">Contact</NavigationItem>
+                    <NavigationItem link="/links">Links</NavigationItem>
+                    <NavigationItem link="/contact">Contact</NavigationItem>
+                    <NavigationItem link="/signin">Login</NavigationItem>
                  </nav>
             </div>
         </Fragment>
