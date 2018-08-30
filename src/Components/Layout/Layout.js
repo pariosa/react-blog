@@ -56,20 +56,20 @@ class Layout extends Component {
                                 closed={this.sideDrawerClosedHandler} />
 
                                 <Route 
-                                    exact path={routes.BLOG} 
+                                    exact path={process.env.PUBLIC_URL + routes.BLOG} 
                                     component ={ () => <Blog className="BlogContainer" />} />  
 
                                 <Route
-                                    exact path={routes.SIGN_UP}
+                                    exact path={process.env.PUBLIC_URL +routes.SIGN_UP}
                                     component={() => <SignUpForm />} />
 
                                 <Route
-                                    exact path={routes.SIGN_IN}
+                                    exact path={process.env.PUBLIC_URL + routes.SIGN_IN}
                                     component={() => <SignIn />}
                                   />
 
                                 <Route 
-                                    exact path={routes.SIGN_OUT}
+                                    exact path={process.env.PUBLIC_URL + routes.SIGN_OUT}
                                     component={() => <SignOut /> }
                                 />
                           

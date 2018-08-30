@@ -1,7 +1,7 @@
-export const SIGN_UP = '/signup';
-export const SIGN_IN = '/signin';
-export const SIGN_OUT = '/signout';
-export const LANDING = '/';
+export const SIGN_UP = process.env.PUBLIC_URL +'/signup';
+export const SIGN_IN =process.env.PUBLIC_URL +'/signin';
+export const SIGN_OUT =process.env.PUBLIC_URL + '/signout';
+export const LANDING = process.env.PUBLIC_URL + '/';
 export const HOME = '/home';
 export const ACCOUNT = '/account';
 export const PASSWORD_FORGET = '/pw-forget';
