@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-
 import { SignUpLink } from './SignUp';
 import { auth } from '../../firebase/firebase';
 import * as routes from '../../Constants/Routes';
+import './SignIn.css';
 
 const SignInPage = ({ history }) =>
-  <div>
+  <div className="login">
     <h1>SignIn</h1>
     <SignInForm history={history} />
     <SignUpLink />
@@ -76,7 +76,7 @@ class SignInForm extends Component {
           type="password"
           placeholder="Password"
         />
-        <button disabled={isInvalid} type="submit">
+        <button disabled={ isInvalid } type="submit">
           Sign In
         </button>
 

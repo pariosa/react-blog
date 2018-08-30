@@ -1,0 +1,12 @@
+.registration{
+	width:40%;
+	margin:0 auto;
+	padding:30px;
+	background-color:white;
+}
+
+.registration > form > input{
+	width:80%;
+	display:block;
+	margin:20px;
+}

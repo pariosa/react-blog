@@ -9,6 +9,8 @@ const navigationItems = () => (
         <NavigationItem link="/links">Links</NavigationItem>
         <NavigationItem link="/contact">Contact</NavigationItem>
         <NavigationItem link="/signin">Login</NavigationItem>
+        <NavigationItem link="/signup">Sign Up</NavigationItem>
+        <NavigationItem link="/signout">Logout</NavigationItem>
     </ul>
 );
 
