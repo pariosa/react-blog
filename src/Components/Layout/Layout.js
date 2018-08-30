@@ -18,25 +18,32 @@ class Layout extends Component {
 
     constructor(props){
         super(props); 
+        const {authUser} = this.props;
+        console.log(authUser);
         this.state = {
-            authUser: props.authUser,
+            //authUser: props.authUser,
             showSideDrawer: false
         }
+
+    }
+    onComponentDidMount(){
+
     }
 
-
     sideDrawerClosedHandler = () => {
-        this.setState( { showSideDrawer: false } );
+        this.setState( ( prevState ) => {  
+            return { 
+                showSideDrawer: false } });
     }
 
     sideDrawerToggleHandler = () => {
         this.setState( ( prevState ) => {
-            return { showSideDrawer: !prevState.showSideDrawer };
+            return {  
+                showSideDrawer: !prevState.showSideDrawer }
         } );
-    }
-
+    } 
     render () {
-    console.log(this.state);
+    console.log(this.props);
         return (
            <div className="Container">
                 <Router>   

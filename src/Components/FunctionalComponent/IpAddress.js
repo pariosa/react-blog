@@ -1,8 +1,8 @@
-import React from 'react';
+import { Component } from 'react';
 
 /*Usage example*/
 
-class IpAddress extends React.Component {
+class IpAddress extends Component {
     constructor(props) {
       super(props);
       this.state = {

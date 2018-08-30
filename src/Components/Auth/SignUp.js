@@ -12,7 +12,7 @@ const INITIAL_STATE = {
   email: '',
   passwordOne: '',
   passwordTwo: '',
-  error: {message: 'somethings broken~!'},
+  error: null,
 };
 
 const byPropKey = (propertyName, value) => () => ({
@@ -46,7 +46,7 @@ class SignUpForm extends Component {
     auth.doCreateUserWithEmailAndPassword(email, passwordOne)
       .then(authUser => {
         this.setState({ ...INITIAL_STATE });
-        history.push(routes.HOME);
+        history.push(routes.BLOG);
       })
       .catch(error => {
         this.setState(byPropKey('error', error));
@@ -66,9 +66,9 @@ class SignUpForm extends Component {
     } = this.state;
 
     const isInvalid = 
-    passwordOne !== passwordTwo ||
-    passwordOne !== '' ||
-    email !== '' ||
+    passwordOne === passwordTwo &&
+    passwordOne !== '' &&
+    email !== '' &&
     username !== '';
 
     return (
@@ -97,7 +97,7 @@ class SignUpForm extends Component {
 	          type="password"
 	          placeholder="Confirm Password"
 	        />
-	        <button /*disabled={isInvalid}?*/ type="submit">
+	        <button disabled={!isInvalid} type="submit">
 	          Sign Up
 	        </button>
 

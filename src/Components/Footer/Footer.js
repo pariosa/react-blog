@@ -16,7 +16,7 @@ class Footer extends Component {
 	render(element){
 		return(
 			<div className="Footer" >   
-		    	it is currently <Clock />. you are accessing this page from the web at: <IpAddress /> if i had to guess your email address it would be: <User user={this.state.authUser} />
+		    	it is currently <Clock />. you are accessing this page from the web at: <IpAddress /> if i had to guess your email address it would be: <User user={this.props.authUser} />
 		    </div> 
 	    )
 	}

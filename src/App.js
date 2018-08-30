@@ -10,17 +10,16 @@ class App extends Component {
   
   constructor(props){
   	super(props);
-
-  	this.state = {
-  		authUser: null
-  	};
+    this.state = {
+      authUser: props.authUser
+    }
   }
 
   componentDidMount(){
 
     firebase.auth.onAuthStateChanged( authUser => {
         console.log('user logged in! ', authUser);
-	    	authUser ? this.setState({ authUser: authUser }) : this.setState({ authUser: null});
+	    	authUser ? this.setState({ authUser }) : this.setState({ authUser: null});
 	    }
     );
     console.log(this.state.authUser);
